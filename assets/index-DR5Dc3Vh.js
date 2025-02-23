@@ -132,20 +132,22 @@ Error generating stack: `+n.message+`
     border: 1px solid rgb(161, 161, 161);
     font-weight: 500;
     margin-top: auto; /* 讓按鈕總是在底部 */
-    &:hover {
-      background-color: var(--button-active);
-      color: white;
-    }
+  }
+  .article-card:hover .btn,
+  .article-card:hover .frame,
+  .article-card:hover h5 {
+    background-color: var(--button-active);
+    color: white;
+  }
+
+  .article-card:hover h5 {
+    background-color: #000;
+    color: var(--theme-border);
   }
 
   .active-page {
     background-color: #000;
     color: #fff !important;
-  }
-
-  .article-card :hover h5 {
-    background-color: #000;
-    color: var(--theme-border);
   }
 
   @media (max-width: 576px) {
@@ -231,6 +233,7 @@ Error generating stack: `+n.message+`
 
   .page-link:hover {
     background-color: var(--theme-border);
+    cursor: pointer;
   }
 
   .active-page {
